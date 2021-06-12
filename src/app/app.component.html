@@ -1,10 +1,17 @@
 <!--<input type="text" [(ngModel)]="title">
 {{ title }}-->
-<div *ngFor="let prod of productos"> 
-  <app-product (productClicked)="clickProduct($event)" [producto]="prod"></app-product>
+<div class="product-grid" > 
+  <app-product 
+    *ngFor="let prod of productos" 
+      (productClicked)="clickProduct($event)"
+       [producto]="prod">
+  </app-product>
 </div>
 ____________________________
-
+<br>
+<p>el valor numerico se portencia por dos </p>
+<input type="text" [(ngModel)]="power">
+ <h1 style="color: black;">{{ power |exponential}}</h1>
 <button (click)="addItem()">
   Add
 </button>
@@ -16,7 +23,7 @@ ____________________________
 
 </ul>
 
-<div *ngFor="let prod of productos"> 
+<div class="product-grid" *ngFor="let prod of productos"> 
  {{ prod.titulo }} 
 <img src="{{ prod.imagen }}"  alt="">
 </div>

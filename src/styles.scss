@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+@media (min-width: 576px){//agregando una regla
+    .product-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (min-width: 1200px){//agregando una regla
+    .product-grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+button{
+    padding: 1em;
+    border-radius: 5px;
+    background-color: cadetblue;
+}
+button:hover{
+    background-color: cornflowerblue;
+}
+button:active{
+    background-color: wheat;
+}

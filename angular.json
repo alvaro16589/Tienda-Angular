@@ -103,9 +103,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "TiendaMRZ"
+  "defaultProject": "TiendaMRZ",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

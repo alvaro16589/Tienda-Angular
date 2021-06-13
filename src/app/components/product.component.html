@@ -3,3 +3,5 @@
 <strong>{{ producto.precio | currency: 'BOB':'symbol-narrow'}}</strong>
 <p>{{ producto.descripcion | slice:0:10}}...</p>
 <button (click)="addCar()"> agregar al carrito</button>
+<br>
+<a [routerLink]="['/products', producto.id]">Ver detalle</a>

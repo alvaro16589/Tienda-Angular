@@ -1,0 +1,7 @@
+nav > a {// la centencia dicta 'cualquier elemento a que este dentro de un nav'
+    padding: 5px;
+    text-decoration: none;
+}
+nav > a.active {
+    background-color: blue;
+} 

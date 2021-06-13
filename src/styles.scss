@@ -20,11 +20,13 @@ body{
 button{
     padding: 1em;
     border-radius: 5px;
-    background-color: cadetblue;
+    background-color: black;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 button:hover{
-    background-color: cornflowerblue;
+    background-color: rgb(3, 3, 109);
 }
 button:active{
-    background-color: wheat;
+    background-color: rgba(66, 66, 65, 0.575);
 }

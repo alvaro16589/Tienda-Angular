@@ -1,0 +1,24 @@
+<p>demo works!</p>
+<input type="text" [(ngModel)]="title">
+{{ title }}
+
+____________________________
+<br>
+<p>el valor numerico se portencia por dos </p>
+<input type="text" [(ngModel)]="power">
+ <h1 style="color: black;">{{ power |exponential}}</h1>
+<button (click)="addItem()">
+  Add
+</button>
+<ul>
+  <li *ngIf="array.length === 0">La lista esta vacia...  lo borraste todo manito!</li>
+  <li *ngFor="let item of array; index as i">
+    {{ i }} {{ item }} <button  (click)="borrarItem(i)">X</button>
+  </li>
+
+</ul>
+<!--
+<div class="product-grid" *ngFor="let prod of productos"> 
+ {{ prod.titulo }} 
+<img src="{{ prod.imagen }}"  alt="">
+</div>-->

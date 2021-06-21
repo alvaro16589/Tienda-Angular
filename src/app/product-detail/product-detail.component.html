@@ -7,7 +7,7 @@
             Nombre: {{ product.titulo}}                
         </li>
         <li>
-            Precio: {{ product.precio }}
+            Precio: {{ product.precio | currency:'BOB':'symbol-narrow'}}
         </li>
     </ul>
     <p>

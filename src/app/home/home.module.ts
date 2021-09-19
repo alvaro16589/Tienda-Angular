@@ -1,3 +1,4 @@
+// para crear un modulo de componente con su routing es #ng g m ruta/comp --routing
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

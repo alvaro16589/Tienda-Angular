@@ -6,7 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
-  {
+  {// para que funcione el routing es necesaria este path para llamar al componente
     path: '',
     component: HomeComponent
   }

@@ -8,12 +8,9 @@ const routes: Routes = [
         component: ContactComponent,
     }
 ];
-NgModule({
-    imports:[
-        RouterModule.forChild(routes),
-
-    ],
-    exports:[RouterModule],//para que otros modulos lo puedan utilizar
-})
+@NgModule({
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
+  })
 
 export class ContactRoutingModule {}

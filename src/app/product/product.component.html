@@ -1,7 +1,23 @@
-<h1 appHighlight>{{ producto.titulo |uppercase | titlecase}}</h1>
-<img [src]="producto.imagen" alt="">
-<strong>{{ producto.precio | currency: 'BOB':'symbol-narrow'}}</strong>
-<p>{{ producto.descripcion | slice:0:10}}...</p>
-<button (click)="addCar()"> agregar al carrito</button>
-<br>
-<a [routerLink]="['/products', producto.id]">Ver detalle</a>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            {{ producto.titulo |uppercase | titlecase}}
+        </mat-card-title>
+        <mat-card-subtitle>
+            {{ producto.precio | currency: 'BOB':'symbol-narrow'}}
+        </mat-card-subtitle>
+    </mat-card-header>
+    <div class="crop-image">
+        <img [src]="producto.imagen" alt="">
+    </div> 
+    
+    <mat-card-content>
+        <p>{{ producto.descripcion | slice:0:10}}...</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="addCar()"> agregar al carrito</button>
+        <br>
+        <a mat-button [routerLink]="['/products', producto.id]" class="notdecorate">Ver detalle</a>
+    </mat-card-actions>
+    
+</mat-card>

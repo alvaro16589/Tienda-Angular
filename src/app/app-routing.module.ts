@@ -28,13 +28,9 @@ const routes: Routes = [
         path: 'products',
         loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
       },
-     {
-        path: 'products/id',
-        loadChildren: () => import('./product-detail/product-detail.module').then(m => m.ProductDetailModule)
-      },
       {
         path: 'contact',
-        canActivate: [AdminGuard],
+        canActivate: [AdminGuard],//habilita o inhabilita el ingreso dentro de esta ruta
         loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
       },
     ]

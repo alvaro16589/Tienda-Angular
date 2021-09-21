@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: ':id',
-    component: ProductDetailComponent
+    loadChildren: () => import('./../product-detail/product-detail.module').then(m => m.ProductDetailModule)
   }
 ];
 

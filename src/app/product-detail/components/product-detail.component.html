@@ -1,16 +1,13 @@
-<div>
-    <img [src]=" product.imagen " alt="">
-</div>
-<div>
-    <ul>
-        <li>
-            Nombre: {{ product.titulo}}                
-        </li>
-        <li>
-            Precio: {{ product.precio | currency:'BOB':'symbol-narrow'}}
-        </li>
-    </ul>
-    <p>
+<mat-card>
+    <mat-card-header>
+        <h1>Nombre:  {{ product.titulo}}  </h1> 
+    </mat-card-header>
+    <mat-card-subtitle>
+        Precio: {{ product.precio | currency:'BOB':'symbol-narrow'}}
+    </mat-card-subtitle>
+    <div class="crop-image"><img [src]=" product.imagen " alt=""></div>
+    
+    <mat-card-content>
         {{ product.descripcion }}
-    </p>
-</div>
+    </mat-card-content>
+</mat-card>

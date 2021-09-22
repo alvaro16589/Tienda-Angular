@@ -17,17 +17,17 @@
 }
 @media (min-width: 576px){//agregando una regla
     .product-grid{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
     .container{//crea espacios a los costados del contenido
-        width: 1110px;
+        width: 90%;
         padding-right: 16px;
         padding-left: 16px;
     }
 }
 @media (min-width: 1200px){//agregando una regla
     .product-grid{
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: repeat(4,1fr);
     }
 }
 button{

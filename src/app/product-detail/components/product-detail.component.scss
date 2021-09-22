@@ -1,0 +1,14 @@
+.crop-image{//clase que hace el recorte de imagenes para que, queden iguales
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        height: 80%;
+    }
+}
